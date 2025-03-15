@@ -3,6 +3,7 @@ body, html {
     padding: 0;
     width: 100%;
     overflow-x: hidden; /* Prevents horizontal scrolling */
+    font-family: 'Times New Roman', Times, serif;
 }
 .home, .skills, .achievements, .projects {
     background-color: #F1F0E9;
@@ -13,11 +14,6 @@ body, html {
     font-weight: 500 !important;
 }
 header{
-    background-attachment: fixed;
-    background-size: cover;
-    -webkit-background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     padding: 10px 0;
 }
 .navbar-nav{
@@ -51,22 +47,22 @@ header{
     height: 2px;
     background-color: black;
 }
-.container-fluid, .container {
+/*.container-fluid, .container {
     max-width: 100%;
     padding-left: 0;
     padding-right: 0;
-} 
+} */
 .about {
-    color: #41644A;
-    font-family: 'Times New Roman', Times, serif !important;
     text-align: center;
+    color: #41644A;
+    font-family: 'Times New Roman', Times, serif;
 }
-.prof{
+/*.prof{
     max-width: 100%;
     height: auto;
     border: 5px solid #41644A;
     border-radius: 20px;
-}
+}*/
 .lead{
     font-family: 'Times New Roman', Times, serif !important;
 }
@@ -81,8 +77,6 @@ header{
     color: #41644A;
 }
 .card{
-    height: 200px !important;
-    width: 400px;
     margin-bottom: 20px;
 }
 .card img{
@@ -90,41 +84,41 @@ header{
     height: auto;
     border-radius: 10px 10px 0 0;
 }
-.card li{
+/*.card li{
     text-align: center !important;
-}
-.skills{
+}*/
+/*.skills{
     background-color: #F1F0E9;
-}
-.skills .container{
+}*/
+/*.skills .container{
     align-items: center;
     margin-left: 10% !important;
     margin-top: 10px;
-}
+}*/
 .skill-box {
     border-radius: 10px; 
     background-color: white; 
+    padding: 20px;
     text-align: center;
     margin-bottom: 20px;
     transition: transform 0.3s ease-in-out;
 
 }
 .skill-box:hover {
-    transform: scale(1.05); 
+    transform: scale(1.03); 
 }
 
 .skills .card-title {
     font-weight: bold;
     color: #41644A;
-   margin: 0 !important;
 }
 
-.skills ul {
+/*.skills ul {
     font-size: 1rem;
     line-height: 1.8;
     padding-left: 20px; 
-}
-.projects .card{
+}*/
+/*.projects .card{
     height: 400px !important;
 }
 .projects .container{
@@ -132,14 +126,14 @@ header{
     margin-left: 10% !important;
     margin-top: 10px;
 }
-.projects{
+*/.projects{
     color: #41644A;
     font-family: 'Times New Roman', Times, serif;
     background-color: #F1F0E9;
-}
+}/*
 .projects .card-title{
     color: #41644A;
-}
+}*/
 .contact{
     text-align: center;
     padding: 50px 20px;
@@ -162,38 +156,36 @@ header{
 .resume-btn:hover {
     background-color: #2f4f36;
 }
-.contact h2 {
+/*.contact h2 {
     color: #41644A;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
-}
-.contact p {
+}*/
+/*.contact p {
     color: #2f4f36;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
-}
+}*/
 /* Footer Styling */
 footer {
     background-color: white;
-    width: 100%;
     padding: 20px 0;
-    display: flex;
     text-align: center;
-    align-items: center;
-    justify-content: space-between;
 }
 footer img{
     width: auto;
 }
-footer .col-md-4 {
+/*footer .col-md-4 {
     display: flex;
     align-items: center;
 }
 footer ul {
     display: flex;
     gap: 15px;
-    padding-right: 20px; /* Adds space from right edge */
-}
+    padding-right: 20px;
+}*/
+ /* Adds space from right edge */
+
 
 footer ul li a img {
     transition: transform 0.3s ease-in-out;
@@ -229,5 +221,19 @@ footer ul li a img:hover {
 
     .nav ul {
         justify-content: center;
+    }
+}
+@media (min-width: 350px) and (max-width: 450px) {
+    .skills .row {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+    }
+    .skills .container {
+        align-items: center;
+    }
+    .skills .col-md-6 {
+        width: 100%; /* Full width to avoid side cuts */
+        margin-bottom: 15px; /* Spacing between two skill boxes */
     }
 }
