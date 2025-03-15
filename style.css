@@ -1,7 +1,10 @@
-body{
-    background-color: #F1F0E9 ;
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
 }
-.home {
+.home, .skills, .achievements, .projects {
     background-color: #F1F0E9;
 }
 .home h3{
@@ -48,7 +51,11 @@ header{
     height: 2px;
     background-color: black;
 }
-    
+.container-fluid, .container {
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+} 
 .about {
     color: #41644A;
     font-family: 'Times New Roman', Times, serif !important;
@@ -136,6 +143,7 @@ header{
 .contact{
     text-align: center;
     padding: 50px 20px;
+    background-color: white;
 }
 /* Resume Button */
 .resume-btn {
@@ -195,6 +203,9 @@ footer ul li a img:hover {
     transform: scale(1.1);
 }
 @media (max-width: 768px) {
+    body{
+        background-color: #F1F0E9;
+    }
     .navbar-nav {
         flex-direction: column;
         text-align: center;
